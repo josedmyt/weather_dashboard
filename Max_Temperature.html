@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Visualization Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="landing_page.html">Latitude</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="myNavbar">
+                    
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Max_Temperature.html">Max Temperature</a></li>
+                            <li><a href="Humidity.html">Humidity</a></li>
+                            <li><a href="Cloudiness.html">Cloudiness</a></li>
+                            <li><a href="Wind_Speed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Comparison.html">Comparison</a></li>
+                    <li><a href="Data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;}
+    </style>
+    <div class="container">
+        <div class="panel-group">
+            <div class= "row">
+                <div class="col-md-8">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h1>Max Temperature</h1></div>
+                        <div class="panel-body">
+                            <img width="500" class="center" src="Resources/assets/images/Fig1.png">
+                            <p>As expected, the weather becomes significantly warmer as one approaches the equator(0 Deg. Latitudee). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><h1>Visualizations</h1></div>
+                        <div class="panel-body">
+                           
+                            <a href="Max_Temperature.html"><img width="200" src="Resources/assets/images/Fig1.png"  style="border:5px solid black"></a>
+                            <a href="Humidity.html"><img width="200" src="Resources/assets/images/Fig2.png"></a>
+                            <a href="Cloudiness.html"><img width="200" src="Resources/assets/images/Fig3.png"></a>
+                            <a href="Wind_Speed.html"><img width="200" src="Resources/assets/images/Fig4.png"></a>
+                                                  
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+</body>
+</html>
